@@ -1,0 +1,142 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola",
+        "qué tal",
+        "cómo estás",
+        "saludos",
+        "buenos días",
+        "buenas tardes",
+        "Hola!"
+      ],
+      "responses": [
+        "¡Hola!",
+        "¡Buenos días!",
+        "¡Buenas tardes! ¿En qué puedo ayudarte?",
+        "¡Hola! ¿Cómo estás?"
+      ]
+    },
+    {
+      "tag": "nombre",
+      "patterns": [
+        "cómo es tu nombre",
+        "cómo te llamas",
+        "quién eres",
+        "cuál es tu nombre",
+        "como te llamas",
+        "cual es tu nombre"
+      ],
+      "responses": [
+        "Me llamo Bender",
+        "Mi nombre es Bender",
+        "Soy Bender, tu asistente virtual."
+      ]
+    },
+    {
+      "tag": "funcionalidad",
+      "patterns": [
+        "como proceso una imagen",
+        "cual es el proceso",
+        "explícame los pasos",
+        "como funciona",
+        "como comienzo",
+        "que debo hacer"
+      ],
+      "responses": [
+        "Debes comenzar cargando un archivo o imagen con texto incluido, a la cual quieras extraerle el texto y analizarlo.",
+        "Debes cargar una imagen, la herramienta extraerá el texto y puedes hacer una consulta a la IA sobre el contenido de la imagen extraído.",
+        "Paso 1: Cargar una imagen y procesarla. Paso 2: Preguntar a la IA qué información necesitas del texto extraído."
+      ]
+    },
+    {
+      "tag": "archivos",
+      "patterns": [
+        "que tipo de archivos puedo cargar",
+        "cuales archivos puedo procesar",
+        "que formatos recibe"
+      ],
+      "responses": [
+        "Puedes subir archivos jpg, png, jpeg."
+      ]
+    },
+    {
+      "tag": "introduccion_ocr",
+      "patterns": [
+        "¿Que es OCR?",
+        "Que es OCR",
+        "explícame OCR",
+        "qué significa OCR",
+        "introducción al OCR",
+        "¿cómo funciona el OCR?"
+      ],
+      "responses": [
+        "OCR significa Reconocimiento Óptico de Caracteres. Es una tecnología que permite convertir diferentes tipos de documentos, como imágenes de texto, en datos editables.",
+        "El OCR se utiliza para extraer texto de imágenes o documentos escaneados.",
+        "El OCR convierte imágenes de texto en texto digital utilizando técnicas avanzadas de procesamiento de imágenes."
+      ]
+    },
+    {
+      "tag": "tecnologias_ocr",
+      "patterns": [
+        "¿Qué tecnologías se usan en OCR?",
+        "¿cómo se implementa OCR?",
+        "herramientas para OCR",
+        "software OCR disponible",
+        "¿qué puedo usar para OCR?"
+      ],
+      "responses": [
+        "Algunas de las tecnologías más utilizadas para OCR son Tesseract, Google Vision API, y Amazon Textract.",
+        "Tesseract es un motor de OCR de código abierto que es muy popular en proyectos de código abierto.",
+        "Puedes implementar OCR utilizando TensorFlow para crear modelos personalizados o usando servicios como Google Vision API."
+      ]
+    },
+    {
+      "tag": "uso_tesseract",
+      "patterns": [
+        "¿Cómo usar Tesseract?",
+        "Como uso Tesseract",
+        "guía de Tesseract",
+        "¿cómo puedo instalar Tesseract?",
+        "ejemplo de Tesseract OCR",
+        "¿cómo funciona Tesseract?"
+      ],
+      "responses": [
+        "Para usar Tesseract, primero debes instalarlo. Luego, puedes usar comandos para extraer texto de imágenes.",
+        "Tesseract se puede integrar con lenguajes de programación como Python para realizar OCR en imágenes.",
+        "Aquí tienes un ejemplo de cómo usar Tesseract en Python: `import pytesseract` y `pytesseract.image_to_string(image)`."
+      ]
+    },
+    {
+      "tag": "tensorflow_ocr",
+      "patterns": [
+        "¿Cómo usar TensorFlow para OCR?",
+        "ejemplos de OCR con TensorFlow",
+        "modelo OCR con TensorFlow",
+        "¿puedo hacer OCR con TensorFlow?",
+        "tutorial de OCR con TensorFlow"
+      ],
+      "responses": [
+        "Puedes usar TensorFlow para entrenar modelos personalizados de OCR utilizando redes neuronales convolucionales.",
+        "TensorFlow permite crear modelos de OCR que pueden ser entrenados para reconocer texto en imágenes con alta precisión.",
+        "Un ejemplo básico sería usar Keras con TensorFlow para diseñar un modelo de reconocimiento de caracteres. También puedes transferir aprendizaje utilizando modelos preentrenados."
+      ]
+    },
+    {
+      "tag": "problemas_comunes",
+      "patterns": [
+        "errores comunes en OCR",
+        "problemas al usar OCR",
+        "OCR no funciona bien",
+        "¿por qué mi OCR falla?",
+        "¿cómo mejorar resultados de OCR?"
+      ],
+      "responses": [
+        "Los problemas comunes en OCR incluyen imágenes de baja calidad, texto distorsionado o manuscrito, y configuraciones incorrectas de preprocesamiento.",
+        "Para mejorar los resultados del OCR, asegúrate de tener imágenes claras y bien iluminadas, y usa técnicas de preprocesamiento como la binarización o el filtrado de ruido.",
+        "Si los resultados de OCR son insatisfactorios, puedes intentar ajustar los parámetros de reconocimiento o utilizar un modelo más avanzado."
+      ]
+    }
+  ]
+}
